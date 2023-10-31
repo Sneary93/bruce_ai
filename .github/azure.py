@@ -5,7 +5,7 @@ import openai
 import os
 # A comment
 # Set up your OpenAI API key
-openai.api_key = os.environ.get('OPENAI_API_KEY')
+openai.api_key = os.environ.get('Bruce_Ai_Key')
 # Initialize Streamlit
 st.title("This is such an awesome app!")
 
