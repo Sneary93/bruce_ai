@@ -3,9 +3,11 @@
 import streamlit as st
 import openai
 import os
-# A comment
+import music_gen  # Import your music generation module
+
 # Set up your OpenAI API key
 openai.api_key = os.environ.get('Bruce_Ai_Key')
+
 # Initialize Streamlit
 st.title("Hi! I am Bruce Almighty!")
 
@@ -18,10 +20,6 @@ user_input = st.text_input("Let me generate the perfect music for you and your s
 
 # Send the user's query to OpenAI GPT-3
 if user_input:
-    response = openai.Completion.create(
-    engine="text-davinci-003",
-    prompt=user_input,
-    max_tokens=50,
-    temperature=temperature  # Use the temperature from the slider
-    )
-    st.write(response['choices'][0]['text'].strip())
+    # Replace OpenAI GPT-3 call with your music generation function
+    generated_music = music_gen.generate_music(user_input, temperature)
+    st.write(generated_music)
