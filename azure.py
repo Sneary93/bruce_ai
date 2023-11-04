@@ -1,6 +1,10 @@
 # azure.py
 # Import necessary libraries
-pip install transformers
+import subprocess
+
+# Use the subprocess module to run the pip install command
+subprocess.check_call(['pip', 'install', 'transformers'])
+
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import note_seq
