@@ -3,11 +3,12 @@
 import subprocess
 
 # Use the subprocess module to run the pip install command
-subprocess.check_call(['pip', 'install', 'transformers'])
+subprocess.check_call(['pip', 'install', 'transformers', 'torch==1.9.1'])
 
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import note_seq
+
 
 # Set up your OpenAI API key
 # Note: You might want to replace this with the appropriate OpenAI key setup.
