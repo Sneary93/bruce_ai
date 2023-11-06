@@ -1,3 +1,4 @@
+install note-seq
 python-dotenv==1.0.0
 streamlit==1.18.1
 streamlit-extras
